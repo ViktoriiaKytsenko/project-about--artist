@@ -89,8 +89,21 @@ button {
 .header-logo {
   fill: #fff;
 }
-.container-hero {
+.container-heder {
+  margin-top: 10.5px;
+  margin-bottom: 10.5px;
   background-color: #23132b;
+}
+
+.header-link {
+  margin-right: auto;
+}
+
+.nav-item {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #fff;
 }
 
 .nav-list {
@@ -98,4 +111,71 @@ button {
   align-items: center;
   justify-content: flex-start;
   flex-direction: row;
+  gap: 32px;
+}
+
+.container-hero {
+  display: flex;
+  flex-direction: row;
+  height: 900px; /* або інша бажана висота */
+}
+
+.hero-title {
+  flex: 1;
+  padding: 60px; /* відступи для краси */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+.hero-image {
+  flex: 1;
+  background-image: url("../images/hero/image-hero.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-caption {
+  font-weight: 700;
+  font-size: 84px;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  color: #fff;
+  padding-bottom: 24px;
+}
+
+.hero-subtitle {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #fff;
+  padding-bottom: 32px;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #fff;
+  border-radius: 12px;
+  padding: 10px 24px;
+  width: 206px;
+  height: 47px;
+  box-shadow: 0 1px 2px 0 rgba(6, 3, 7, 0.05),
+    inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(6, 3, 7, 0.15),
+    inset 0 2px 1px 0 rgba(255, 255, 255, 0.25),
+    inset 0 32px 24px 0 rgba(255, 255, 255, 0.05);
+  background: #764191;
+}
+
+.icon-triangle {
+  transition: transform 0.3s ease;
+}
+
+.button:hover .icon-triangle {
+  transform: translateX(4px); /* стрілка рухається при наведенні */
 }
